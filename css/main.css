@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    color: #000711;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 400;
+        }
+
+.container {
+    margin: 0 auto;  
+}
+
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #F7F1D9;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.sidebar {
+    display: flex;
+    background: #3277EE;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+.section {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: #EEEAE7;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+
+   
+}
+
+.section__wrapper {
+    display: grid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-column-start: 2;
+    grid-column-end: 11;
+    grid-template: repeat(2,1fr) / repeat(9, 1fr);
+    gap: 20px;
+}
+
+.img__man {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.img__laptop {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.img__flowers{
+    grid-row-start: 1;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+.img__green{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+.img__nature{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.img__desktop{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.img__sunset{
+    grid-row-start: 2;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #000711;
+    color: #EEEAE7;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;}
